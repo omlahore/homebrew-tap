@@ -1,15 +1,16 @@
 class Removemacai < Formula
-  desc "Turn off Apple Intelligence on macOS 27 and reclaim its disk space"
+  desc "Turn off Apple Intelligence on macOS 27 and remove its models"
   homepage "https://github.com/omlahore/RemoveMacAI"
-  url "https://github.com/omlahore/RemoveMacAI/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "8074b30b660dc055a8e9b1bc6b1dbe333bd94c4f6f91b8464ba24250e5c1ca59"
+  url "https://github.com/omlahore/RemoveMacAI/releases/download/v0.2.2/removemacai-darwin-arm64.tar.gz"
+  version "0.2.2"
+  sha256 "c87aea3a57af65bd9fdc2e1b56587d54d7b578d556671dd85811cfc1a45d198f"
   license "MIT"
   depends_on arch: :arm64
   depends_on :macos
 
   def install
-    system "swift", "build", "--disable-sandbox", "--configuration", "release"
-    bin.install ".build/release/removemacai"
+    bin.install "removemacai"
+    prefix.install "THIRD-PARTY-NOTICES.md"
   end
 
   test do
