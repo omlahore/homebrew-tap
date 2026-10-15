@@ -1,6 +1,6 @@
 cask "bodycam-app" do
   version "0.2.0"
-  sha256 "b3eb84cc0ef9a466965249689c07c803fc87711669e14a55ad11ef27d52944cb"
+  sha256 "4811b16c67dbe1473ed3f16c26131914659ce209aa9ec24cf3b53e6c465b19dc"
 
   url "https://github.com/omlahore/bodycam/releases/download/v#{version}/bodycam-app.zip"
   name "bodycam"
