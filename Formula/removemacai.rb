@@ -6,7 +6,7 @@ class Removemacai < Formula
   sha256 "19dd6496b641748bcd63515f0075b6fdd318e1173e6fe76237ff24a1f195ab07"
   license "MIT"
   depends_on arch: :arm64
-  depends_on :macos
+  depends_on macos: :tahoe
 
   def install
     bin.install "removemacai"
