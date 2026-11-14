@@ -1,12 +1,12 @@
 class Removemacai < Formula
   desc "Debloat macOS: turn off Apple Intelligence, analytics, ads and pop-ups"
   homepage "https://github.com/omlahore/RemoveMacAI"
-  url "https://github.com/omlahore/RemoveMacAI/releases/download/v1.1.4/removemacai-darwin-arm64.tar.gz"
-  version "1.1.4"
-  sha256 "19dd6496b641748bcd63515f0075b6fdd318e1173e6fe76237ff24a1f195ab07"
+  url "https://github.com/omlahore/RemoveMacAI/releases/download/v1.2.0/removemacai-darwin-arm64.tar.gz"
+  version "1.2.0"
+  sha256 "8b15e8cebe008846606c9af5e605da44671ccfa3f5fe6ac2d700e7c6b595245f"
   license "MIT"
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  depends_on macos: :sequoia
 
   def install
     bin.install "removemacai"
